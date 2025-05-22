@@ -4,6 +4,7 @@ import ServicesOverview from "@/components/home/services-overview"
 import Sectors from "@/components/home/sectors"
 import Testimonials from "@/components/home/testimonials"
 import CallToAction from "@/components/call-to-action"
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function Home() {
   return (
