@@ -4,6 +4,7 @@ import ContactForm from "@/components/contact/contact-form"
 import MapSection from "@/components/contact/map-section"
 import FaqSection from "@/components/contact/faq-section"
 import CallToAction from "@/components/call-to-action"
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function ContactPage() {
   return (
