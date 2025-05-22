@@ -155,7 +155,7 @@ export default function ServicePopup() {
                   onClick={() => navigateToService("inspection")}
                   className="bg-[#e0f2f1] text-[#00695c] border border-[#b2dfdb] rounded py-2 px-4 text-left hover:bg-[#b2dfdb] transition-colors"
                 >
-                  Termite Porous Piping
+                  Porous Piping
                 </button>
               </div>
               <button
