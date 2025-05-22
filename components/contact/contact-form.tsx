@@ -136,15 +136,21 @@ export default function ContactForm() {
                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
                 required
               >
-                <option value="" disabled>
-                  {t.Services}
-                </option>
-                <option value="pest-control">{t.pch}</option>
-                <option value="sanitization">{t.snh}</option>
-                <option value="traders">{t.trh}</option>
-                <option value="water-proofing">{t.wph}</option>
-                <option value="warehouse">{t.wwh}</option>
-                <option value="other">{t.Other}</option>
+                
+<option value="" disabled>
+  {t.Services}
+</option>
+<option value="cockroach-control">{t.Cockroachh}</option>
+<option value="mosquito-control">{t.Mosquitohh}</option>
+<option value="housefly-management">{t.Houseflyh}</option>
+<option value="bed-bug-elimination">{t.Bed_Bugh}</option>
+<option value="rat-rodent-control">{t.Rat_Rodenth}</option>
+<option value="pre-construction-treatment">{t.Anti_Termiteh}</option>
+<option value="post-construction-treatment">{t.Post_Consth}</option>
+<option value="termite-inspection">{t.Termite_Inspectionh}</option>
+<option value="termite-porous-piping">{t.Termiteh}</option>
+<option value="preventative-measures">{t.Preventative_Measures}</option>
+<option value="other">{t.Other}</option>
               </select>
             </div>
 
