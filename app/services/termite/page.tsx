@@ -19,7 +19,6 @@ export default function TermitePage() {
             title: "Anti_Termiteh",
             description: "Anti_Termitehp",
             image: "https://i.ibb.co/hxtjTYh4/Pre-Construction-10-11zon.jpg",
-            price: "price_tag",
             features: ["servicel1", "servicel2", "servicel3", "servicel4", "servicel5"],
             whatsappLink:
               "https://wa.me/918827222101?text=I'm%20interested%20in%20pre-construction%20termite%20treatment",
@@ -28,7 +27,6 @@ export default function TermitePage() {
             title: "Post_Consth",
             description: "Post_Consthp",
             image: "https://i.ibb.co/PvLGBMNW/Post-Construction-9-11zon.jpg",
-            price: "price_tag1",
             features: ["post_servicel1", "post_servicel2", "post_servicel3", "post_servicel4", "post_servicel5"],
             whatsappLink:
               "https://wa.me/918827222101?text=I'm%20interested%20in%20post-construction%20termite%20treatment",
@@ -37,7 +35,6 @@ export default function TermitePage() {
             title: "Termiteh",
             description: "Termitehp",
             image: "https://i.ibb.co/jvQLhZKb/Termite-Baiting-System-12-11zon.jpg",
-            price: "price",
             features: [
               "Termite_servicel1",
               "Termite_servicel2",
@@ -51,7 +48,6 @@ export default function TermitePage() {
             title: "Chemicalh",
             description: "Chemicalp",
             image: "https://i.ibb.co/nsb48Sjt/Chemical-Barrier-Treatment-3-11zon.jpg",
-            price: "price1",
             features: [
               "Chemical_servicel1",
               "Chemical_servicel2",
@@ -66,7 +62,6 @@ export default function TermitePage() {
             title: "Termite_Inspectionh",
             description: "Termite_Inspectionp",
             image: "https://i.ibb.co/6Rvgb6w9/Termite-Inspection-14-11zon.jpg",
-            price: "price2",
             features: [
               "Termite_Inspectionl1",
               "Termite_Inspectionl2",
