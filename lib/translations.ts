@@ -355,7 +355,7 @@ export const translations = {
     fqs5: "Yes, we stand behind our work with service guarantees. The specific terms vary by service type, and we'll be happy to discuss these details during your consultation.",
 
     // CTA Contact
-    need: "Need immediate assistance?",
+    need: "Need Emergency assistance?",
     nnedp: "Call us now at (+91) 88272 22101 for prompt service.",
     call: "Call Now",
   },
