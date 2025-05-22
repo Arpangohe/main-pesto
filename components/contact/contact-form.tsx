@@ -149,7 +149,6 @@ export default function ContactForm() {
 <option value="post-construction-treatment">{t.Post_Consth}</option>
 <option value="termite-inspection">{t.Termite_Inspectionh}</option>
 <option value="termite-porous-piping">{t.Termiteh}</option>
-<option value="preventative-measures">{t.Preventative_Measures}</option>
 <option value="other">{t.Other}</option>
               </select>
             </div>
