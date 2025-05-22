@@ -6,25 +6,39 @@ import { useRouter } from "next/navigation"
 export default function ServicePopup() {
   const [isActive, setIsActive] = useState(false)
   const [isMounted, setIsMounted] = useState(false)
+  const [hasShown, setHasShown] = useState(false)
   const router = useRouter()
 
   useEffect(() => {
     setIsMounted(true)
 
-    // Show popup after 1 second
-    const showTimer = setTimeout(() => {
-      setIsActive(true)
+    // Handler to show popup on first scroll
+    const handleScroll = () => {
+      if (!hasShown) {
+        setIsActive(true)
+        setHasShown(true)
 
-      // Auto close after 10 seconds
-      const closeTimer = setTimeout(() => {
-        setIsActive(false)
-      }, 10000)
+        // Auto close after 10 seconds
+        const closeTimer = setTimeout(() => {
+          setIsActive(false)
+        }, 10000)
 
-      return () => clearTimeout(closeTimer)
-    }, 1000)
+        // Clean up timer if popup is closed early
+        return () => clearTimeout(closeTimer)
+      }
+    }
 
-    return () => clearTimeout(showTimer)
-  }, [])
+    // Only add scroll listener if popup hasn't been shown yet
+    if (!hasShown) {
+      window.addEventListener("scroll", handleScroll, { once: true })
+    }
+
+    // Clean up
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [hasShown])
 
   // Don't render anything on the server
   if (!isMounted) {
