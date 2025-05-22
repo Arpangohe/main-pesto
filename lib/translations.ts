@@ -15,7 +15,7 @@ export const translations = {
 
     // About Overview
     welcome_heading: "Welcome to The Pestology",
-    welcome_sub: "Your trusted partner for comprehensive facility solutions",
+    welcome_sub: "Done Once, Done Right",
     who_we_are: "Who We Are",
     sub_text_p:
       "We are a multifaceted solution company formed to provide ease of living in 2022. From Pest Management to Hygiene Solutions, we intend to provide various hassle-free Facility solutions for day-to-day problems with our seamless services through the best quality products.",
