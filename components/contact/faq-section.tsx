@@ -14,6 +14,11 @@ export default function FaqSection() {
     setActiveIndex(activeIndex === index ? null : index)
   }
 
+  const handleCallNow = () => {
+    // Replace with your phone number
+    window.location.href = "tel:+1234567890"
+  }
+
   const faqs = [
     {
       question: "fq1",
@@ -59,10 +64,28 @@ export default function FaqSection() {
               </div>
 
               <div className={`px-5 pb-5 transition-all duration-300 ${activeIndex === index ? "block" : "hidden"}`}>
-                <p className="text-gray-600">{t[faq.answer]}</p>
+                <p className="text-gray-600 mb-4">{t[faq.answer]}</p>
+                <button
+                  onClick={handleCallNow}
+                  className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2"
+                >
+                  <i className="fas fa-phone"></i>
+                  Call Now
+                </button>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Alternative: Global Call Now button at the bottom */}
+        <div className="text-center mt-8">
+          <button
+            onClick={handleCallNow}
+            className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-medium text-lg transition-colors duration-200 flex items-center gap-2 mx-auto"
+          >
+            <i className="fas fa-phone"></i>
+            Call Now for More Help
+          </button>
         </div>
       </div>
     </section>
