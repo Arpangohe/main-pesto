@@ -43,7 +43,7 @@ export default function Testimonials() {
           {/* Bigger client image above testimonials */}
           <div className="flex justify-center mb-8">
             <img
-              src="https://ik.imagekit.io/arpangohe/Screenshot%202025-05-23%20151506.png?updatedAt=1747993806195"
+              src="https://ik.imagekit.io/arpangohe/Screenshot%202025-05-23%20151506.png?updatedAt=1747999374009"
               alt="Our Partners"
               className="rounded-lg shadow-md w-full max-w-2xl h-auto object-contain"
               style={{ maxHeight: "400px" }}
