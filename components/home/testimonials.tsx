@@ -40,6 +40,15 @@ export default function Testimonials() {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
+          {/* Bigger client image above testimonials */}
+          <div className="flex justify-center mb-8">
+            <img
+              src="https://yourimageshare.com/ib/IpuePrTUxx"
+              alt="Our Partners"
+              className="rounded-lg shadow-md w-full max-w-2xl h-auto object-contain"
+              style={{ maxHeight: "400px" }}
+            />
+          </div>
           <h2 className="text-3xl font-bold mb-3 text-indigo-900">{t.wocsh}</h2>
           <p className="text-gray-600">{t.wocsp}</p>
         </div>
@@ -47,7 +56,14 @@ export default function Testimonials() {
         <div className="max-w-3xl mx-auto relative">
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
             <div className="mb-6 text-gray-700 italic">
-              <p>"{t[testimonials[currentIndex].content]}"</p>
+              <p>
+                "
+                {
+                  // @ts-expect-error: dynamic key from translations
+                  t[testimonials[currentIndex].content]
+                }
+                "
+              </p>
             </div>
             <div>
               <h4 className="font-bold">{testimonials[currentIndex].author}</h4>
