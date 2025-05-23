@@ -46,7 +46,7 @@ export default function Testimonials() {
               src="https://ik.imagekit.io/arpangohe/Screenshot%202025-05-23%20151506.png?updatedAt=1747999374009"
               alt="Our Partners"
               className="rounded-lg shadow-md w-full max-w-2xl h-auto object-contain"
-              style={{ maxHeight: "400px" }}
+              style={{ maxHeight: "600px" }}
             />
           </div>
           <h2 className="text-3xl font-bold mb-3 text-indigo-900">{t.wocsh}</h2>
