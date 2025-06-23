@@ -5,13 +5,54 @@ import Image from "next/image"
 import { useLanguage } from "@/context/language-context"
 import { translations } from "@/lib/translations"
 
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay, Navigation } from "swiper/modules"
+import "swiper/css"
+import "swiper/css/navigation"
+
 export default function AboutOverview() {
   const { language } = useLanguage()
   const t = translations[language]
 
+  const carouselImages = [
+    "https://i.ibb.co/YTfN7QxG/Whats-App-Image-2025-06-17-at-10-44-15-2d923e78.jpg",
+    "https://i.ibb.co/ptYtvSY/Whats-App-Image-2025-06-17-at-10-44-14-9b22e667.jpg"
+  ]
+
   return (
     <section className="py-16">
+       <h2 className="text-center text-3xl font-bold mb-3 text-indigo-900">News Flash</h2>
+       <p className="text-center">Team The Pestology in panchmadi </p>
       <div className="container mx-auto px-4">
+
+        {/* Carousel Section */}
+        <div className="mb-16">
+          <Swiper
+            modules={[Autoplay, Navigation]}
+            spaceBetween={30}
+            slidesPerView={1}
+            autoplay={{ delay: 3000 }}
+            loop
+            navigation
+            className="rounded-lg shadow-lg"
+          >
+            {carouselImages.map((src, index) => (
+              <SwiperSlide key={index}>
+                <div className="w-full h-[300px] relative rounded-lg overflow-hidden">
+                  <Image
+                    src={src}
+                    alt={`Carousel Image ${index + 1}`}
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+        {/* About Us Section */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-3 text-indigo-900">{t.welcome_heading}</h2>
           <p className="text-gray-600">{t.welcome_sub}</p>
