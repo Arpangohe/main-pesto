@@ -26,7 +26,7 @@ export default function TermitePage() {
           {
             title: "Post_Consth",
             description: "Post_Consthp",
-            image: "https://i.ibb.co/PvLGBMNW/Post-Construction-9-11zon.jpg",
+            image: "https://cdn-bmenp.nitrocdn.com/AqlhNPLFuoMmbJIvDWsgBKchMSjFnVmk/assets/static/optimized/rev-9a5efbf/wp-content/uploads/2016/11/postconstruction4-1.jpg",
             features: ["post_servicel1", "post_servicel2", "post_servicel3", "post_servicel4", "post_servicel5"],
             whatsappLink:
               "https://wa.me/918827222101?text=I'm%20interested%20in%20post-construction%20termite%20treatment",
@@ -34,7 +34,7 @@ export default function TermitePage() {
           {
             title: "Termiteh",
             description: "Termitehp",
-            image: "https://i.ibb.co/jvQLhZKb/Termite-Baiting-System-12-11zon.jpg",
+            image: "https://5.imimg.com/data5/ANDROID/Default/2021/7/VP/ZC/VK/28580272/product-jpeg-500x500.JPG",
             features: [
               "Termite_servicel1",
               "Termite_servicel2",

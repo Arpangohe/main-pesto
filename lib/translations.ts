@@ -269,9 +269,9 @@ export const translations = {
     Termite_servicel4: "Biannual treatment to maintain continuous protection",
     Termite_servicel5: "Long-term preventative solution requiring minimal disruption",
 
-    Chemicalh: "Chemical Barrier Treatment",
+    Chemicalh: "Porous Pipe Supply",
     Chemicalp:
-      "Create a complete barrier around your property that prevents termites from entering while eliminating any existing termite activity.",
+      "We also ",
     price1: "Starting from ₹18 per sq.ft.",
     Chemical_servicel1: "Application of liquid termiticide around the perimeter",
     Chemical_servicel2: "Creation of continuous chemical zone in the soil",

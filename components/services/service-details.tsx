@@ -38,14 +38,14 @@ export default function ServiceDetails({ title, description, services }: Service
               className={`flex flex-col lg:flex-row ${
                 index % 2 === 1 ? "lg:flex-row-reverse" : ""
               } bg-white rounded-lg overflow-hidden shadow-lg`}
-            >
-              <div className="lg:w-1/2">
+            > 
+              <div className="lg:w-1/2 ml-10 h-96 relative">
                 <Image
                   src={service.image || "/placeholder.svg"}
                   alt={t[service.title]}
-                  width={600}
-                  height={400}
-                  className="w-full h-full object-cover"
+                  width={0}
+                  height={0}
+                  className="w-full h-full object-fill"
                 />
               </div>
               <div className="lg:w-1/2 p-8 md:p-10">
